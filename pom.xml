@@ -49,7 +49,7 @@
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt-api</artifactId>
                 <version>${jjwt.version}</version>
-                <scope>runtime</scope>
+<!--                <scope>runtime</scope>-->
             </dependency>
 
             <!-- Implementation -->
@@ -57,7 +57,7 @@
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt-impl</artifactId>
                 <version>${jjwt.version}</version>
-                <scope>runtime</scope>
+<!--                <scope>runtime</scope>-->
             </dependency>
 
             <!-- Jackson Serializer/Deserializer -->
