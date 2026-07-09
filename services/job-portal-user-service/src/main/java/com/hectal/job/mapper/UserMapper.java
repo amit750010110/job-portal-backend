@@ -3,6 +3,9 @@ package com.hectal.job.mapper;
 import com.hectal.job.dto.response.UserResponse;
 import com.hectal.job.modal.User;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class UserMapper {
     public static UserResponse toDTO(User user) {
         UserResponse dto = new UserResponse();
@@ -18,5 +21,10 @@ public class UserMapper {
 
         return dto;
 
+    }
+
+    public static List<UserResponse> toDTOList(List<User> users) {
+
+        return users.stream().map(UserMapper::toDTO).collect(Collectors.toList());
     }
 }
